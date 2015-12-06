@@ -1,0 +1,137 @@
+body
+{
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	font-size: 11pt;
+	line-height: 13pt;
+	direction: ltr;
+	background: url("../pics/empty-lab.png") no-repeat left top;
+	color: white;
+}
+h1
+{
+	text-align: center;
+	margin: 1em 0;
+}
+h1 img
+{
+	/*color: darkblue;
+	font-size: 30pt;*/
+	width: 350px;
+}
+
+/*
+#divSelectLab
+{
+	font-size: 15pt;
+	font-weight: bold;
+	padding: 10px;
+}*/
+#divMapAndExplanation
+{
+	overflow: hidden;
+	width: 1400px;
+	margin: 0 auto;
+}
+#divProperties
+{
+	float: right;
+}
+#divProperties > ul,
+#divProperties > div
+{
+	width: 160px;
+/*	border: 1px solid black;*/
+	margin: 0 0 1em 0;
+	padding: 7px;
+}
+#divMap
+{
+	float: right;
+	margin-right: 10px;
+	position: relative;
+}
+#divMap > div.map
+{
+	width: 1200px;
+	height: 507px;
+	margin: 0 auto;
+	background: url("../maps/1.png") no-repeat left top;
+}
+#divMap > div > div.computer
+{
+	position: absolute;
+	width: 35px;
+	height: 35px;
+}
+#divMap > div > div.computer.status1
+{
+	background: url("../pics/available.png") no-repeat left top;
+	cursor: pointer;
+}
+#divMap > div > div.computer.status2
+{
+        background: url("../pics/reserved.png") no-repeat left top;
+}
+#divMap > div > div.computer.status3
+{
+        background: url("../pics/inUse.png") no-repeat left top;
+}
+#divMap > div > div.computer.status4
+{
+        background: url("../pics/broken.png") no-repeat left top;
+}
+#divMap > div > div.computer.selected
+{
+        background: url("../pics/purple.png") no-repeat left top;
+}
+div.computerInfo h3
+{
+	margin: 3px 0;
+	text-decoration: underline;
+	font-weight: bold;
+	color: darkblue;
+}
+div.computerInfo h4
+{
+	margin: 0;
+}
+div.computerInfo span
+{
+	margin: 0;
+}
+#ifrmPages
+{
+	display: none;
+	position: absolute;
+	left: 700px;
+	top: 200px;
+	background-color: white;
+	width: 350px;
+	height: 150px;
+}
+div.Occupacity
+{
+	position: absolute;
+	font-size: 24pt;
+	font-weight: bold;
+	top: 300px;
+	color: black;
+	width: 100px;
+	text-align: center;
+}
+#divOccupacity1
+{
+	left: 68px;
+}
+#divOccupacity2
+{
+	left: 995px;
+}
+#divOccupacity3
+{
+	left: 384px;
+}
+#divOccupacity4
+{
+	left: 691px;
+}

@@ -1,0 +1,112 @@
+body
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11pt;
+	line-height: 13pt;
+	direction: rtl;
+}
+h1
+{
+	color: darkblue;
+	text-align: center;
+	font-size: 30pt;
+	margin: 1em 0;
+}
+h2
+{
+	color: green;
+	font-size: 14pt;
+	line-height: 17pt;
+	border-bottom: 1px dashed gray;
+	padding: 0;
+	margin: 10px;
+	text-align: right;
+}/*
+#divSelectLab
+{
+	font-size: 15pt;
+	font-weight: bold;
+	padding: 10px;
+}*/
+#divMapAndExplanation
+{
+	overflow: hidden;
+	width: 1400px;
+	margin: 0 auto;
+}
+#divProperties
+{
+	float: right;
+}
+#divProperties > ul,
+#divProperties > div
+{
+	width: 160px;
+	border: 1px solid black;
+	margin: 0 0 1em 0;
+	padding: 7px;
+}
+#divMap
+{
+	float: right;
+	border: 1px solid black;
+	margin-right: 10px;
+}
+#divMap > div
+{
+	position: relative;
+	width: 1200px;
+	height: 507px;
+	margin: 0 auto;
+	/*background: url("http://localhost:1337/maps/1.png") no-repeat left top;*/
+	background: url("../maps/1.png") no-repeat left top;
+}
+#divMap > div > div.computer
+{
+	position: absolute;
+	width: 35px;
+	height: 35px;
+}
+#divMap > div > div.computer.status1
+{
+        background: url("../pics/available.png") no-repeat left top;
+/*	background: rgba(0, 0, 255, 0.5);*/
+}
+#divMap > div > div.computer.status2
+{
+        background: url("../pics/reserved.png") no-repeat left top;
+/*	background: rgba(255, 255, 0, 0.5);*/
+}
+#divMap > div > div.computer.status3
+{
+        background: url("../pics/inUse.png") no-repeat left top;
+/*	background: rgba(255, 0, 0, 0.5);*/
+}
+#divMap > div > div.computer.status4
+{
+        background: url("../pics/broken.png") no-repeat left top;
+/*	background: rgba(80, 80, 80, 0.5);*/
+}
+/*#divMap > div > div.computer.status4 > div.inner
+{
+	margin-right: 8px;
+	margin-top: -11px;
+	color: red;
+	line-height: 34pt;
+	font-size: 31pt;
+}*/
+div.computerInfo h3
+{
+	margin: 3px 0;
+	text-decoration: underline;
+	font-weight: bold;
+	color: darkblue;
+}
+div.computerInfo h4
+{
+	margin: 0;
+}
+div.computerInfo span
+{
+	margin: 0;
+}

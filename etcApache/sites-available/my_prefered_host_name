@@ -1,0 +1,44 @@
+XBitHack on
+# Virtual host for genomebrowser
+<VirtualHost *:80>
+	ServerAdmin systemadmind@gmail.com
+	DocumentRoot /var/www
+	ServerName genomebrowser
+	<Directory />
+		Order deny,allow
+		Deny from all
+		Options FollowSymLinks
+		AllowOverride None
+	</Directory>
+	<Directory /var/www>
+		AllowOverride AuthConfig
+		Options +Inlcudes
+		Order allow,deny
+		allow from all
+	</Directory>
+
+	ScriptAlias /cgi-bin/ /var/www/cgi-bin/
+	<Directory /var/www/cgi-bin">
+		AllowOverride None
+		Options +ExecCGI -MultiViews +SymLinksIfOwnerMatch
+		Order allow,deny
+		Allow from all
+		AddHandler cgi-script .cgi .pl
+	</Directory>
+
+	ErrorLog /var/www/logs/apache2/error.log
+	CustomLog /var/www//logs/apache2/access.log combined
+	LogLevel warn
+
+	Alias /doc/ "/usr/share/doc/"
+	<Directory "/usr/share/doc/">
+		Options Indexes MultiViews FollowSymLinks
+		AllowOverride None
+		Order deny,allow
+		Deny from all
+		Allow from 127.0.0.0/255.0.0.0 ::1/128
+	</Directory>
+
+	# Some security
+	ServerSignature Off
+</VirtualHost>

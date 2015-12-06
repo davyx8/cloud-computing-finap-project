@@ -1,0 +1,105 @@
+body
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11pt;
+	line-height: 13pt;
+	direction: rtl;
+}
+#divMapAndExplanation
+{
+	overflow: hidden;
+}/*
+#divProperties
+{
+}*/
+#divProperties > ul,
+#divProperties > div
+{
+	width: 160px;
+	margin: 0 0 1em 0;
+	padding: 7px;
+}
+#ulExplanation
+{
+	display: block;
+	list-style-type: none;
+	margin: 0;
+	padding: 0 10px;
+}
+#ulExplanation > li
+{
+	font-weight: bold;
+	font-size: 16pt;
+	margin: 0.5em 0;
+	line-height: 35px;
+}
+#ulExplanation > li > span.color
+{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+}
+#ulExplanation > li > span.count
+{
+	font-size: 12pt;
+	font-weight: normal;
+}/*
+#divMap
+{
+}*/
+#divMap > div
+{
+	position: relative;
+	width: 1200px;
+	height: 507px;
+	background: url("../../maps/1.png") no-repeat left top;
+}
+#divMap > div > div.computer
+{
+	position: absolute;
+	width: 34px;
+	height: 33px;
+}
+#divMap > div > div.computer.status1,
+#ulExplanation > li.status1 span.color
+{
+	background: rgba(0, 0, 255, 0.5);
+}
+#divMap > div > div.computer.status2,
+#ulExplanation > li.status2 span.color
+{
+	background: rgba(255, 255, 0, 0.5);
+}
+#divMap > div > div.computer.status3,
+#ulExplanation > li.status3 span.color
+{
+	background: rgba(255, 0, 0, 0.5);
+}
+#divMap > div > div.computer.status4,
+#ulExplanation > li.status4 span.color
+{
+	background: rgba(80, 80, 80, 0.5);
+}
+#divMap > div > div.computer.status4 > div.inner
+{
+	margin-right: 8px;
+	margin-top: -11px;
+	color: red;
+	line-height: 34pt;
+	font-size: 31pt;
+}
+div.computerInfo h3
+{
+	margin: 3px 0;
+	text-decoration: underline;
+	font-weight: bold;
+	color: darkblue;
+}
+div.computerInfo h4
+{
+	margin: 0;
+}
+div.computerInfo span
+{
+	margin: 0;
+}

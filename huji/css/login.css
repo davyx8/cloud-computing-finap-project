@@ -1,0 +1,8 @@
+body
+{
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	font-size: 11pt;
+	line-height: 13pt;
+	direction: rtl;
+	background: url("../pics/empty-lab.png") no-repeat left top;
+}

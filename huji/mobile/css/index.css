@@ -1,0 +1,100 @@
+body
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11pt;
+	line-height: 13pt;
+	direction: rtl;
+}
+#divMapAndExplanation
+{
+	overflow: hidden;
+}/*
+#divProperties
+{
+}*/
+#divProperties > ul,
+#divProperties > div
+{
+	width: 160px;
+	margin: 0 0 1em 0;
+	padding: 7px;
+}
+#divMap
+{
+	position: relative;
+	width: 1200px;
+	height: 507px;
+}
+#divMap > div.map
+{
+	width: 1200px;
+	height: 507px;
+	background: url("../../maps/1.png") no-repeat left top;
+}
+#divMap > div > div.computer
+{
+	position: absolute;
+	width: 35px;
+	height: 35px;
+}
+#divMap > div > div.computer.status1
+{
+	background: url("../../pics/available.png") no-repeat left top;
+/*	background: rgba(0, 0, 255, 0.5);*/
+}
+#divMap > div > div.computer.status2
+{
+	background: url("../../pics/reserved.png") no-repeat left top;
+/*	background: rgba(255, 255, 0, 0.5);*/
+}
+#divMap > div > div.computer.status3
+{
+	background: url("../../pics/inUse.png") no-repeat left top;
+/*	background: rgba(255, 0, 0, 0.5);*/
+}
+#divMap > div > div.computer.status4
+{
+	background: url)"../../pics/broken.png") no-repeat left top;
+/*	background: rgba(80, 80, 80, 0.5);*/
+}
+div.computerInfo h3
+{
+	margin: 3px 0;
+	text-decoration: underline;
+	font-weight: bold;
+	color: darkblue;
+}
+div.computerInfo h4
+{
+	margin: 0;
+}
+div.computerInfo span
+{
+	margin: 0;
+}
+div.Occupacity
+{
+	position: absolute;
+	font-size: 24pt;
+	font-weight: bold;
+	top: 300px;
+	color: black;
+	width: 100px;
+	text-align: center;
+}
+#divOccupacity1
+{
+	left: 68px;
+}
+#divOccupacity2
+{
+	left: 995px;
+}
+#divOccupacity3
+{
+	left: 384px;
+}
+#divOccupacity4
+{
+	left: 691px;
+}
